@@ -1,37 +1,39 @@
 .work {
 }
-.work-container{
+.photo__container{
 
 }
 .section-work{
   padding-bottom: 94px;
 }
-.work-title {
+.photo__title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.work-title {
   margin-bottom: 50px;
 }
 
-.work-list { 
+.photo__list { 
   display: flex;
   gap: 30px;
 }
-.work-item {
+.photo__item {
  
 
 }
 
-.work-item-wrap {
+.photo__item__wrap {
 position: relative;
   width: 100%;
 
 
 
 }
-.work-item-title {
+.photo__item__title {
 position: absolute;
 bottom: 0;
 left: 0;
