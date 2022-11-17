@@ -43,9 +43,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .portfolio-item{
-    transition-property:transform ;
-transition-duration: 250ms ;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 
 }
@@ -73,8 +71,8 @@ letter-spacing: 0.03em;
 color: var(--background-color);
 background-color: var(--active-rgba);
 
-.portfolio-item:hover &,
-.portfolio-item:focus &{
+.portfolio-link:hover &,
+.portfolio-link:focus &{
 transform: translateY(0);
 }
 
@@ -84,10 +82,10 @@ transform: translateY(0);
 .portfolio-link {
   color: var(--title-text-color);
   display: inline-block;
-    transition-property: box-shadow ;
+    transition-property:transform, box-shadow ;
 transition-duration: 250ms ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus{
+&:hover,&:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }

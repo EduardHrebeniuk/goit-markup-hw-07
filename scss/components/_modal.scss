@@ -52,6 +52,9 @@ border-radius: 4px;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color:var(--background-color);
+      transition-property: fill ;
+transition-duration: 250ms ;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -59,13 +62,16 @@ border-radius: 4px;
     transition-property: fill ;
 transition-duration: 250ms ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.modal-exit-btg:hover &,.modal-exit-btg:focus &{
+  fill: var(--active-color);
+}
   &:active{fill: var(--active-color);
 }
-}
-
-.modal-form{
 
 }
+
+// .modal-form{}
+
 .modal-title{
   font-weight: 700;
 font-size: 20px;
@@ -107,7 +113,7 @@ outline: transparent ;
 transition-duration: 250ms ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
-&:hover, 
+&:hover,
 &:focus{
   border-color: var(--active-color) ;
 }
@@ -131,7 +137,7 @@ font-family: inherit;
 font-size: 16px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
-&, &:focus{
+&:hover,&:focus{
   border-color: var(--active-color);
 }
 &::placeholder{
@@ -140,7 +146,7 @@ transition-duration: 250ms ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 font-style: normal;
 font-weight: 400;
-font-size: 12px;
+font-size: 16px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
@@ -184,9 +190,9 @@ line-height: calc(24 / 14);
 letter-spacing: 0.03em;
 }
 
-.modal-form-contract-icon{
+// .modal-form-contract-icon{
 
-}
+// }
 .form-check-text{
   display: flex;
   align-items: center;

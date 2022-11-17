@@ -281,11 +281,11 @@ body {
   gap: 30px;
 }
 
-.card__list__item {
+.card__list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.card__list__thumb {
+.card__list-thumb {
   display: flex;
   height: 120px;
   background-color: var(--team-background-color);
@@ -297,11 +297,11 @@ body {
   margin-bottom: 30px;
 }
 
-.card__list__icon {
+.card__list-icon {
   fill: currentColor;
 }
 
-.card__list__title {
+.card__list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -313,7 +313,7 @@ body {
   margin-bottom: 10px;
 }
 
-.card__list__content {
+.card__list-content {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -341,12 +341,12 @@ body {
   gap: 30px;
 }
 
-.photo__item__wrap {
+.photo__item-wrap {
   position: relative;
   width: 100%;
 }
 
-.photo__item__title {
+.photo__item-title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -725,12 +725,6 @@ body {
   gap: 30px;
 }
 
-.portfolio-item {
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .portfolio-item-wrap {
   position: relative;
   overflow: hidden;
@@ -751,14 +745,14 @@ body {
   color: var(--background-color);
   background-color: var(--active-rgba);
 }
-.portfolio-item:hover .portfolio-item-top-text, .portfolio-item:focus .portfolio-item-top-text {
+.portfolio-link:hover .portfolio-item-top-text, .portfolio-link:focus .portfolio-item-top-text {
   transform: translateY(0);
 }
 
 .portfolio-link {
   color: var(--title-text-color);
   display: inline-block;
-  transition-property: box-shadow;
+  transition-property: transform, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -836,12 +830,18 @@ body {
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-svg {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-exit-btg:hover .modal-svg, .modal-exit-btg:focus .modal-svg {
+  fill: var(--active-color);
 }
 .modal-svg:active {
   fill: var(--active-color);
@@ -909,7 +909,7 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
 }
-.modal-form-text, .modal-form-text:focus {
+.modal-form-text:hover, .modal-form-text:focus {
   border-color: var(--active-color);
 }
 .modal-form-text::-moz-placeholder {
@@ -919,7 +919,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -931,7 +931,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -942,7 +942,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
