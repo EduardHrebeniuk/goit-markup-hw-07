@@ -212,17 +212,18 @@ letter-spacing: 0.03em;
    transition-property: background-color, border-color, fill;
 transition-duration: 250ms ;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-check:checked + .form-check-text span {
+.input-check:checked + &{
   background-color: var(--active-color);
   border-color: transparent;
   fill: #ffffff;
 }
 
-.input-check:focus + .form-check-text span {
+.input-check:focus + & {
   border-color: var(--active-color);
 }
+}
+
+
 
 .modal-form-contract-link{
 color: var(--active-color);
